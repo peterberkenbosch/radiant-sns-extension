@@ -1,4 +1,4 @@
-class Admin::TextAssetController < Admin::AbstractModelController
+class Admin::TextAssetController < Admin::ResourceController
 
   only_allow_access_to :index, :new, :edit, :remove, :upload,
     :when => [:developer, :admin],
