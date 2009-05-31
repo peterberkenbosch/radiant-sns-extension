@@ -31,8 +31,8 @@ require File.dirname(__FILE__) + '/../../spec_helper'
     # calls to text_assets(:symbolic_name).  Don't ask me why but it assumes
     # that this method should always return a Stylesheet or Javascript (which-
     # ever is loaded last).
-    scenario :users, :stylesheets if current_asset[:name] == 'stylesheet'
-    scenario :users, :javascripts if current_asset[:name] == 'javascript'
+    dataset :users, :stylesheets if current_asset[:name] == 'stylesheet'
+    dataset :users, :javascripts if current_asset[:name] == 'javascript'
 
     test_helper :caching
 
