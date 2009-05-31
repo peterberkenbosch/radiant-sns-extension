@@ -1,7 +1,7 @@
 class TextAsset < ActiveRecord::Base
   set_inheritance_column :class_name
 
-  order_by 'name'
+  default_scope :order => "name ASC"
 
   # Associations
   belongs_to :created_by, :class_name => 'User'
