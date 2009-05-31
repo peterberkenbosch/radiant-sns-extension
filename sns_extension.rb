@@ -4,7 +4,7 @@
 # NOTE: If you change this, don't forget to remove any previous cache folder
 TEXT_ASSET_CACHE_DIR = "text_asset_cache"
 
-require_dependency 'application'
+require_dependency 'application_controller'
 require 'ostruct'
 
 
