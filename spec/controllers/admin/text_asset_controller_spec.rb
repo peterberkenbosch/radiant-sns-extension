@@ -34,7 +34,7 @@ require File.dirname(__FILE__) + '/../../spec_helper'
     dataset :users, :stylesheets if current_asset[:name] == 'stylesheet'
     dataset :users, :javascripts if current_asset[:name] == 'javascript'
 
-    test_helper :caching
+    #test_helper :caching
 
     before :each do
       login_as :developer
